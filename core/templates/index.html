@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Django1</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+<center>
+    <h1>Django 1</h1>
+
+    <img src="{% static 'images/django.jpeg' %}" alt="">
+
+    <h2>{{ curso }}</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+                <tr>
+                    <td><a href="{% url 'product' product.id %}">{{ product.name }}</a></td>
+                     <td>{{ product.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+<button onclick="test()">Click</button>
+</center>
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
