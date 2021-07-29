@@ -1,1 +1,9 @@
 Learning Django
+
+in /admin
+user: admin
+password: django123
+
+to add and delete items from database
+database: SQLite
+demo: https://django1-shino.herokuapp.com/

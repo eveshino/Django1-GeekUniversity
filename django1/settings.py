@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-gqjtyq%gjfotlpl=u1f79*ds5g!@j^4puyh7xo@e018d6bkgi%
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']  #Heroku Domain
+ALLOWED_HOSTS = ['django1-shino.herokuapp.com']  #Heroku Domain
 
 
 # Application definition
